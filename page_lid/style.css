@@ -1,0 +1,200 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    margin: 0;
+}
+
+
+.field_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+/*------------------------------
+
+    Информация по лиду
+
+-------------------------------*/
+.lid_conteiner{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 100%;
+}
+.lid_info_conteiner{
+    margin: 20px 0 20px 50px;
+    padding: 20px;
+    
+    width: 420px;
+    height: 100%;
+
+    border: 1px solid #000;
+}
+.contacts_item_block{
+    width: 100%;
+}
+#lid_contacts{
+    width: 100%;
+    height: 25px;
+
+    margin-bottom: 5px;
+    text-align: center;
+}
+.info_redact_block{
+    padding: 10px 10px 0 10px;
+
+    border: 1px solid #000;
+    border-top: none;
+}
+.tags_conteiner{
+    margin-top: 10px;
+}
+.tags_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin-top: 5px;
+
+    box-sizing: content-box;
+}
+.service_tag{
+    box-sizing: content-box;
+
+    margin: 10px 0 0 10px;
+    padding: 2px 7px 2px 7px;
+
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+/*------------------------------
+
+        Кнопки и их стилизация
+
+-------------------------------*/
+.btn{
+    width: 100px;
+    height: 25px;
+
+    margin-left: 5px;
+}
+.save_changes{
+    position: relative;
+    left: 205px;
+}
+.switch_datas{
+    position: relative;
+    left: 205px;
+}
+.edit_iquiry{
+    width: 150px;
+}
+.create_inquiry{
+    width: 160px;
+}
+.save_inquiry{
+    position: relative;
+    top: 10px;
+
+    width: 100%;
+}
+
+/*------------------------------
+
+    контейнер с информацией по лиду
+
+-------------------------------*/
+.right_block_conteiner{
+    box-sizing: content-box;
+    padding: 20px;
+}
+.info_lid_conteiner{
+    box-sizing: content-box;
+
+    margin-bottom: 25px;
+    padding: 20px;
+
+    border: 1px solid #000;
+}
+.nav_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 25px;
+}
+
+.inquiry_list_conteiner{
+    width: 610px;
+
+    box-sizing: content-box;
+}
+.inquiry_item_block{
+    display: flex;
+    flex-direction: column;
+    
+    box-sizing: content-box;
+    width: 610px;
+    
+    margin-top: 5px;
+    padding: 10px;
+    
+    border: 1px solid #000;
+}
+.inquiry_list_conteiner h2{
+    margin: 0px;
+    padding: 0 25px 0 0;
+}
+.information_inquiry{
+    display: none;
+}
+
+/*------------------------------
+
+        Форма составления запроса
+
+-------------------------------*/
+.form_inquiry_conteiner{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.sourse_inquiry_block{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+.type_inquiry_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin-bottom: 25px;
+}
+.type_inquiry_block select{
+    width: 300px;
+    height: 25px;
+
+    margin: 0 10px 0 10px;
+}
+.info_inquiry_block{
+    display: none;
+    width: 100%;
+}
+.form_inquiry_conteiner input{
+    width: 250px;
+    padding: 0 5px 0 5px;
+}

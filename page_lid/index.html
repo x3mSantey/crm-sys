@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="lid_conteiner">
+
+        <div class="lid_info_conteiner">
+
+            <div class="name_lid_block">
+                <h1>Название лида</h1>
+            </div>
+
+            <div class="main_info_block">
+                <div class="select_block field_block">
+                    <h4>Статус:</h4>
+                    <select>
+                        <option value="">не обработан</option>
+                        <option value="">уточнение</option>
+                        <option value="">активная проработка</option>
+                        <option value="">отложен</option>
+                        <option value="">архив</option>
+                        <option value="">возобновлен</option>
+                        <option value="">завершен</option>
+                    </select>
+                </div>
+
+                <div class="manager_block field_block">
+                    <h4>Ответственный:</h4>
+                    <h4>Имя Фамилия Отчество</h4>
+                </div>
+
+                <div class="sourse_lid_block field_block">
+                    <h4>Источник</h4>
+                    <select name="" id="">
+                        <option value="">поиск в интернете</option>
+                        <option value="">рекомендации клиентов</option>
+                        <option value="">выставка</option>
+                        <option value="">таможенная база</option>
+                    </select>
+                </div>
+
+                <div class="date_create_block field_block">
+                    <h4>Дата:</h4>
+                    <h4>11.10.2019</h4>
+                </div>
+            </div>
+            <div class="company_block">
+                <h3>Компания</h3>
+                <div class="company_inn_block field_block">
+                    <h4>ИНН:</h4>
+                    <h4>7823932038</h4>
+                </div>
+                <div class="company_tel_block field_block">
+                    <h4>Тел:</h4>
+                    <h4>8 999 555 43-43</h4>
+                </div>
+                <div class="company_sites_block field_block">
+                    <h4>Сайты:</h4>
+                    <h4>qweerty.com</h4>
+                </div>
+                <div class="company_social_block field_block">
+                    <h4>Соц.сети:</h4>
+                    <h4>qwerty.com</h4>
+                </div>
+                <button class="switch_datas btn">Изменить</button>
+                <button class="save_changes btn">Сохранить</button>
+            </div>
+
+            <div class="contacts_block">
+                <div class="name_obj_block">
+                    <h3>Контакты</h3>
+                </div>
+                <div class="contacts_item_block">
+                    <select name="" id="lid_contacts">
+                        <option value="">1Имя Фамилия Отчесто</option>
+                        <option value="">1Имя Фамилия Отчесто</option>
+                        <option value="">1Имя Фамилия Отчесто</option>
+                        <option value="">Добавить новый контакт</option>
+                    </select>
+                </div>
+                <div class="info_redact_block">
+                    <div class="contacts_tel_block field_block">
+                        <h4>Тел:</h4>
+                        <h4>8 999 555 43-43</h4>
+                    </div>
+                    <div class="contacts_email_block field_block">
+                        <h4>Эл. почта:</h4>
+                        <h4>qwerty@mail.com</h4>
+                    </div>
+                    <div class="contacts_social_block field_block">
+                        <h4>Соц.сети:</h4>
+                        <h4>qwerty.com</h4>
+                    </div>
+                </div>
+                <button class="switch_datas btn">Изменить</button>
+                <button class="save_changes btn">Сохранить</button>
+            </div>
+
+            <div class="type_lid_block field_block">
+                <h4>Отрасль:</h4>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </div>
+
+            <div class="tags_conteiner">
+                <h4>Теги услуг:</h4>
+                <div class="tags_block">
+                    <div class="service_tag">тег услуги</div>
+                    <div class="service_tag">тег услуги</div>
+                    <div class="service_tag">тег услуги</div>
+                    <div class="service_tag">тег услуги</div>
+                    <div class="service_tag">тег услуги</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_block_conteiner">
+            <div class="info_lid_conteiner">
+                <div class="nav_block">
+                    <button class="btn edit_iquiry">Редактировать запрос</button>
+                    <button class="btn create_inquiry">Создать новый запрос</button>
+                </div>
+
+
+                <div class="form_inquiry_conteiner">
+                    <div class="main_info_form_iquiry">
+                        <h1>Сформировать запрос</h1>
+                        <div class="field_block nomber_inquiry_block">
+                            <h4>Номер запроса</h4>
+                            <h4>12321344214</h4>
+                        </div>
+                        <div class="field_block sourse_inquiry_block">
+                            <h4>Источник запроса</h4>
+                            <select name="" id="">
+                                <option value="">Холодные звонки</option>
+                                <option value="">Сайт</option>
+                                <option value="">Действующий клиент</option>
+                                <option value="">Активная продажа</option>
+                                <option value="">Таможенная база</option>
+                            </select>
+                        </div>
+                        <div class="type_inquiry_block">
+                            <h4>Выберите тип запроса</h4>
+                            <select name="" id="type_inquiry">
+                                <option value="">Негабарит</option>
+                                <option value="">FTL</option>
+                                <option value="">LTL</option>
+                                <option value="">FCL</option>
+                            </select>
+                            <button class="select_type btn">Выбор</button>
+                        </div>
+                    </div>
+
+                    <div class="FTL_inquiry_block info_inquiry_block">
+                        <h2>Груз типа FTL</h2>
+                        <div class="type_car_block field_block">
+                            <h4>Тип транспорта</h4>
+                            <select name="" id="">
+                                <option value="">тип транспорта</option>
+                                <option value="">тип транспорта</option>
+                            </select>
+                        </div>
+
+                        <div class="variant_loading_block field_block">
+                            <h4>Способ погрузки</h4>
+                            <select name="" id="">
+                                <option value="">зад</option>
+                                <option value="">бок</option>
+                                <option value="">верхняя</option>
+                                <option value="">полная растентовка</option>
+                            </select>
+                        </div>
+
+
+                        <div class="geog_loading_block">
+                            <h3>География загрузки</h3>
+                            <div class="country_loading_block field_block">
+                                <h4>Выбереите страну погрузки</h4>
+                                <select name="" id="">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_loading_block field_block">
+                                <h4>Адрес погрузки</h4>
+                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="geog_unloading_block">
+                            <h3>География выгрузки</h3>
+                            <div class="country_unloading_block field_block">
+                                <h4>Выбереите страну разгрузки</h4>
+                                <select name="" id="">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_unloading_block field_block">
+                                <h4>Адресс разгрузки</h4>
+                                <input type="text" placeholder="Введите адрес рагрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="cargo_block">
+                            <h3>Блок груз</h3>
+                            <div class="type_cargo_block field_block">
+                                <h4>Характер груза</h4>
+                                <input type="text" name="type_cargo" placeholder="Введите характер груза">
+                            </div>
+
+                            <div class="price_block field_block">
+                                <h4>Стоимость груза</h4>
+                                <input type="text" name="price_cargo" placeholder="Введите стоимость груза">
+                            </div>
+
+                            <div class="weight_block field_block">
+                                <h4>Вес груза</h4>
+                                <input type="text" name="weight_cargo" placeholder="Введите вес груза">
+                            </div>
+
+                            <div class="country_invoise_block field_block">
+                                <h4>Страна в инфосах</h4>
+                                <input type="text" name="country_invoise" placeholder="Введите страну в инвойсках">
+                            </div>
+
+                            <div class="code_tnvad_block field_block">
+                                <h4>Кол-во кодов ТНВЭД</h4>
+                                <input type="text" name="code_tnvad" placeholder="Введите кол-во кодов">
+                            </div>
+
+                            <div class="packing_block field_block">
+                                <h4>Упаковка</h4>
+                                <input type="text" name="packing_cargo" placeholder="Введите тип упаковки">
+                            </div>
+
+                            <div class="class_dunger_block field_block">
+                                <h4>Класс опасности</h4>
+                                <input type="text" name="class_dunger" placeholder="Введите класс опасности">
+                            </div>
+
+                            <div class="traffic_block field_block">
+                                <h4>Регулярность грузоперевозок</h4>
+                                <input type="text" name="traffic" placeholder="Введите регулярность грузоперевозок">
+                            </div>
+
+                            <div class="tempr_block field_block">
+                                <h4>Температурный режим</h4>
+                                <input type="text" name="tempr" placeholder="Введите температурный режим">
+                            </div>
+
+                            <div class="size_cargo_block field_block">
+                                <h4>Габариты груза</h4>
+                                <input type="text" name="size_cargo" placeholder="Введите габариты груза">
+                            </div>
+                        </div>
+                        <button class="save_inquiry btn">Сохранить запрос</button>
+                    </div>
+
+
+
+
+
+                    <div class="LTL_inquiry_block info_inquiry_block">
+                        <h2>Груз типа LTL</h2>
+                        <div class="variant_loading_block field_block">
+                            <h4>Способ погрузки</h4>
+                            <select name="" id="">
+                                <option value="">зад</option>
+                                <option value="">бок</option>
+                                <option value="">верхняя</option>
+                                <option value="">полная растентовка</option>
+                            </select>
+                        </div>
+
+                        <div class="geog_loading_block">
+                            <h3>География загрузки</h3>
+                            <div class="country_loading_block field_block">
+                                <h4>Выбереите страну погрузки</h4>
+                                <select name="" id="">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_loading_block field_block">
+                                <h4>Адресс погрузки</h4>
+                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="geog_unloading_block">
+                            <h3>География выгрузки</h3>
+                            <div class="country_unloading_block field_block">
+                                <h4>Выбереите страну разгрузки</h4>
+                                <select name="" id="">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_unloading_block field_block">
+                                <h4>Адресс разгрузки</h4>
+                                <input type="text" placeholder="Введите адрес разгрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="cargo_block">
+                            <h3>Блок груз</h3>
+                            <div class="type_cargo_block field_block">
+                                <h4>Характер груза</h4>
+                                <input type="text" name="type_cargo" placeholder="Введите характер груза">
+                            </div>
+
+                            <div class="price_block field_block">
+                                <h4>Стоимость груза</h4>
+                                <input type="text" name="price_cargo" placeholder="Введите стоимость груза">
+                            </div>
+
+                            <div class="weight_block field_block">
+                                <h4>Вес груза</h4>
+                                <input type="text" name="weight_cargo" placeholder="Введите вес груза">
+                            </div>
+
+                            <div class="sum_block field_block">
+                                <h4>Количество мест</h4>
+                                <input type="text" placeholder="Введите количество мест">
+                            </div>
+
+                            <div class="stacking_block field_block">
+                                <h4>Возможность штабелирования</h4>
+                                <input type="text" placeholder="Введите количество мест">
+                            </div>
+
+                            <div class="country_invoise_block field_block">
+                                <h4>Страна в инфосах</h4>
+                                <input type="text" name="country_invoise" placeholder="Введите страну в инвойсках">
+                            </div>
+
+                            <div class="code_tnvad_block field_block">
+                                <h4>Кол-во кодов ТНВЭД</h4>
+                                <input type="text" name="code_tnvad" placeholder="Введите кол-во кодов">
+                            </div>
+
+                            <div class="packing_block field_block">
+                                <h4>Упаковка</h4>
+                                <input type="text" name="packing_cargo" placeholder="Введите тип упаковки">
+                            </div>
+
+                            <div class="class_dunger_block field_block">
+                                <h4>Класс опасности</h4>
+                                <input type="text" name="class_dunger" placeholder="Введите класс опасности">
+                            </div>
+
+                            <div class="traffic_block field_block">
+                                <h4>Регулярность грузоперевозок</h4>
+                                <input type="text" name="traffic" placeholder="Введите регулярность грузоперевозок">
+                            </div>
+
+                            <div class="tempr_block field_block">
+                                <h4>Температурный режим</h4>
+                                <input type="text" name="tempr" placeholder="Введите температурный режим">
+                            </div>
+
+                            <div class="size_cargo_block field_block">
+                                <h4>Габариты груза</h4>
+                                <input type="text" name="size_cargo" placeholder="Введите габариты груза">
+                            </div>
+                        </div>
+                        <button class="save_inquiry btn">Сохранить запрос</button>
+                    </div>
+
+                    
+                    <div class="notOverall_inquiry_block info_inquiry_block">
+                        <h2>Груз типа 'негабарит'</h2>
+                        <div class="type_car_block field_block">
+                            <h4>Тип транспорта</h4>
+                            <select name="" id="">
+                                <option value="">тип транспорта</option>
+                                <option value="">тип транспорта</option>
+                            </select>
+                        </div>
+
+                        <div class="variant_loading_block field_block">
+                            <h4>Способ погрузки</h4>
+                            <select name="" id="">
+                                <option value="">зад</option>
+                                <option value="">бок</option>
+                                <option value="">верхняя</option>
+                                <option value="">полная растентовка</option>
+                            </select>
+                        </div>
+
+                        <div class="geog_loading_block">
+                            <h3>География загрузки</h3>
+                            <div class="country_loading_block field_block">
+                                <h4>Выбереите страну погрузки</h4>
+                                <select name="" id="">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_loading_block field_block">
+                                <h4>Адресс погрузки</h4>
+                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="geog_unloading_block">
+                            <h3>География выгрузки</h3>
+                            <div class="country_unloading_block field_block">
+                                <h4>Выбереите страну разгрузки</h4>
+                                <select name="" id="">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_unloading_block field_block">
+                                <h4>Адресс разгрузки</h4>
+                                <input type="text" placeholder="Введите адрес разгрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="cargo_block">
+                            <h3>Блок груз</h3>
+                            <div class="type_cargo_block field_block">
+                                <h4>Характер груза</h4>
+                                <input type="text" name="type_cargo" placeholder="Введите характер груза">
+                            </div>
+
+                            <div class="price_block field_block">
+                                <h4>Стоимость груза</h4>
+                                <input type="text" name="price_cargo" placeholder="Введите стоимость груза">
+                            </div>
+
+                            <div class="weight_block field_block">
+                                <h4>Вес груза</h4>
+                                <input type="text" name="weight_cargo" placeholder="Введите вес груза">
+                            </div>
+
+                            <div class="country_invoise_block field_block">
+                                <h4>Страна в инфосах</h4>
+                                <input type="text" name="country_invoise" placeholder="Введите страну в инвойсках">
+                            </div>
+
+                            <div class="code_tnvad_block field_block">
+                                <h4>Кол-во кодов ТНВЭД</h4>
+                                <input type="text" name="code_tnvad" placeholder="Введите кол-во кодов">
+                            </div>
+
+                            <div class="packing_block field_block">
+                                <h4>Упаковка</h4>
+                                <input type="text" name="packing_cargo" placeholder="Введите тип упаковки">
+                            </div>
+
+                            <div class="class_dunger_block field_block">
+                                <h4>Класс опасности</h4>
+                                <input type="text" name="class_dunger" placeholder="Введите класс опасности">
+                            </div>
+
+                            <div class="traffic_block field_block">
+                                <h4>Регулярность грузоперевозок</h4>
+                                <input type="text" name="traffic" placeholder="Введите регулярность грузоперевозок">
+                            </div>
+
+                            <div class="tempr_block field_block">
+                                <h4>Температурный режим</h4>
+                                <input type="text" name="tempr" placeholder="Введите температурный режим">
+                            </div>
+
+                            <div class="size_cargo_block field_block">
+                                <h4>Габариты груза</h4>
+                                <input type="text" name="size_cargo" placeholder="Введите габариты груза">
+                            </div>
+                        </div>
+                        <button class="save_inquiry btn">Сохранить запрос</button>
+                    </div>
+
+
+
+                    <div class="FCL_inquiry_block info_inquiry_block">
+                        <h2>Груз типа FCL(море/жд/авиа)</h2>
+                        <div class="type_car_block field_block">
+                            <h4>Тип транспорта</h4>
+                            <select name="type_car" id="type_car">
+                                <option value="">тип транспорта</option>
+                                <option value="">тип транспорта</option>
+                            </select>
+                        </div>
+
+                        <div class="delivery_condition_block field_block">
+                            <h4>Условия поставки</h4>
+                            <select name="delivery_condition" id="delivery_condition">
+                                <option value="">EXW</option>
+                                <option value="">FCA</option>
+                                <option value="">FOB</option>
+                            </select>
+                        </div>
+
+                        <div class="geog_loading_block">
+                            <h3>География загрузки</h3>
+                            <div class="country_loading_block field_block">
+                                <h4>Выбереите страну погрузки</h4>
+                                <select name="country_loading" id="country_loading">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_loading_block field_block">
+                                <h4>Адресс погрузки</h4>
+                                <input type="text" name="address_loading" id="address_loading" placeholder="Введите адрес погрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="geog_unloading_block">
+                            <h3>География выгрузки</h3>
+                            <div class="country_unloading_block field_block">
+                                <h4>Выбереите страну разгрузки</h4>
+                                <select name="country_unloading" id="country_unloading">
+                                    <option value="">Россия</option>
+                                </select>
+                            </div>
+                            <div class="address_unloading_block field_block">
+                                <h4>Адресс разгрузки</h4>
+                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                            </div>
+                            <div class="address_tamoj_oforml field_block">
+                                <h4>Адрес таможенного оформления</h4>
+                                <input type="text" name="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                            </div>
+                        </div>
+
+                        <div class="cargo_block">
+                            <h3>Блок груз</h3>
+                            <div class="type_cargo_block field_block">
+                                <h4>Характер груза</h4>
+                                <input type="text" name="type_cargo" placeholder="Введите характер груза">
+                            </div>
+
+                            <div class="price_block field_block">
+                                <h4>Стоимость груза</h4>
+                                <input type="text" name="price_cargo" placeholder="Введите стоимость груза">
+                            </div>
+
+                            <div class="weight_block field_block">
+                                <h4>Вес груза</h4>
+                                <input type="text" name="weight_cargo" placeholder="Введите вес груза">
+                            </div>
+
+                            <div class="country_invoise_block field_block">
+                                <h4>Страна в инфосах</h4>
+                                <input type="text" name="country_invoise" placeholder="Введите страну в инвойсках">
+                            </div>
+
+                            <div class="code_tnvad_block field_block">
+                                <h4>Кол-во кодов ТНВЭД</h4>
+                                <input type="text" name="code_tnvad" placeholder="Введите кол-во кодов">
+                            </div>
+
+                            <div class="packing_block field_block">
+                                <h4>Упаковка</h4>
+                                <input type="text" name="packing_cargo" placeholder="Введите тип упаковки">
+                            </div>
+
+                            <div class="class_dunger_block field_block">
+                                <h4>Класс опасности</h4>
+                                <input type="text" name="class_dunger" placeholder="Введите класс опасности">
+                            </div>
+
+                            <div class="traffic_block field_block">
+                                <h4>Регулярность грузоперевозок</h4>
+                                <input type="text" name="traffic" placeholder="Введите регулярность грузоперевозок">
+                            </div>
+
+                            <div class="tempr_block field_block">
+                                <h4>Температурный режим</h4>
+                                <input type="text" name="tempr" placeholder="Введите температурный режим">
+                            </div>
+
+                            <div class="size_cargo_block field_block">
+                                <h4>Габариты груза</h4>
+                                <input type="text" name="size_cargo" placeholder="Введите габариты груза">
+                            </div>
+                        </div>
+                        <button class="save_inquiry btn">Сохранить запрос</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inquiry_list_conteiner">
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
