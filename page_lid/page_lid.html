@@ -12,10 +12,20 @@
 </head>
 
 <body>
+    <div class="header_conteiner">
+            <div class="menu_block">
+        <a href="file:///D:/PROJECTS/CRM%20system/task_v2/page_tasks.html">
+            <button class="btn btn_last_page">назад</button>
+        </a>
+        <div class="nav_block">
+            <button class="btn edit_iquiry">Редактировать запрос</button>
+            <button class="btn create_inquiry">Создать новый запрос</button>
+        </div>
+    </div>
+    </div>
     <div class="lid_conteiner">
-
         <div class="lid_info_conteiner">
-
+            
             <div class="name_lid_block">
                 <h1>Название лида</h1>
             </div>
@@ -58,22 +68,26 @@
                 <h3>Компания</h3>
                 <div class="company_inn_block field_block">
                     <h4>ИНН:</h4>
-                    <h4>7823932038</h4>
+                    <input type="text" placeholder="Введите ИНН" class="company_inp" name="nomber_inn">
+                    <h4 class="company_info nomber_inn">7823932038</h4>
                 </div>
                 <div class="company_tel_block field_block">
                     <h4>Тел:</h4>
-                    <h4>8 999 555 43-43</h4>
+                    <input type="text" placeholder="Введите номер телефона" class="company_inp" name="nomber_tel">
+                    <h4 class="company_info nomber_tel">8 999 555 43-43</h4>
                 </div>
                 <div class="company_sites_block field_block">
                     <h4>Сайты:</h4>
-                    <h4>qweerty.com</h4>
+                    <input type="text" placeholder="Ввставьте ссылку" class="company_inp" name="address_site">
+                    <h4 class="company_info address_site">qweerty.com</h4>
                 </div>
                 <div class="company_social_block field_block">
                     <h4>Соц.сети:</h4>
-                    <h4>qwerty.com</h4>
+                    <input type="text" placeholder="Вставьте ссылку" class="company_inp" name="address_social">
+                    <h4 class="company_info address_social">qwerty.com</h4>
                 </div>
-                <button class="switch_datas btn">Изменить</button>
-                <button class="save_changes btn">Сохранить</button>
+                <button class="switch_datas btn" id="switch_datas_company">Изменить</button>
+                <button class="save_changes btn" id="save_changes_company">Сохранить</button>
             </div>
 
             <div class="contacts_block">
@@ -82,28 +96,30 @@
                 </div>
                 <div class="contacts_item_block">
                     <select name="" id="lid_contacts">
-                        <option value="">1Имя Фамилия Отчесто</option>
-                        <option value="">1Имя Фамилия Отчесто</option>
-                        <option value="">1Имя Фамилия Отчесто</option>
-                        <option value="">Добавить новый контакт</option>
+                        <option value="">Имя Фамилия Отчесто</option>
+                        <option value="">Имя Фамилия Отчесто</option>
+                        <option value="">Имя Фамилия Отчесто</option>
                     </select>
                 </div>
                 <div class="info_redact_block">
                     <div class="contacts_tel_block field_block">
                         <h4>Тел:</h4>
-                        <h4>8 999 555 43-43</h4>
+                        <input type="text" placeholder="Введите номер телефона" class="contacts_inp" name="nomber_tel">
+                        <h4 class="contacts_info contacts_s">8 999 555 43-43</h4>
                     </div>
                     <div class="contacts_email_block field_block">
                         <h4>Эл. почта:</h4>
-                        <h4>qwerty@mail.com</h4>
+                        <input type="text" placeholder="Введите почту" class="contacts_inp" name="address_email">
+                        <h4 class="contacts_info contacts_social">qwerty@mail.com</h4>
                     </div>
                     <div class="contacts_social_block field_block">
                         <h4>Соц.сети:</h4>
-                        <h4>qwerty.com</h4>
+                        <input type="text" placeholder="Вставьте ссылку" class="contacts_inp" name="address_social">
+                        <h4 class="contacts_info contacts_social">qwerty.com</h4>
                     </div>
                 </div>
-                <button class="switch_datas btn">Изменить</button>
-                <button class="save_changes btn">Сохранить</button>
+                <button class="switch_datas btn" id="switch_datas_contacts">Изменить</button>
+                <button class="save_changes btn" id="save_datas_contacts">Сохранить</button>
             </div>
 
             <div class="type_lid_block field_block">
@@ -126,14 +142,12 @@
                     <div class="service_tag">тег услуги</div>
                 </div>
             </div>
+            <textarea name="" id="descr_field" cols="30" rows="10" placeholder="Добавить описание"></textarea>
         </div>
 
         <div class="right_block_conteiner">
             <div class="info_lid_conteiner">
-                <div class="nav_block">
-                    <button class="btn edit_iquiry">Редактировать запрос</button>
-                    <button class="btn create_inquiry">Создать новый запрос</button>
-                </div>
+                
 
 
                 <div class="form_inquiry_conteiner">
@@ -141,11 +155,11 @@
                         <h1>Сформировать запрос</h1>
                         <div class="field_block nomber_inquiry_block">
                             <h4>Номер запроса</h4>
-                            <h4>12321344214</h4>
+                            <h4 id="nomber_inquiry" >12321344214</h4>
                         </div>
                         <div class="field_block sourse_inquiry_block">
                             <h4>Источник запроса</h4>
-                            <select name="" id="">
+                            <select name="" id="sourse_inquiry">
                                 <option value="">Холодные звонки</option>
                                 <option value="">Сайт</option>
                                 <option value="">Действующий клиент</option>
@@ -169,7 +183,7 @@
                         <h2>Груз типа FTL</h2>
                         <div class="type_car_block field_block">
                             <h4>Тип транспорта</h4>
-                            <select name="" id="">
+                            <select name="type_car" id="">
                                 <option value="">тип транспорта</option>
                                 <option value="">тип транспорта</option>
                             </select>
@@ -177,7 +191,7 @@
 
                         <div class="variant_loading_block field_block">
                             <h4>Способ погрузки</h4>
-                            <select name="" id="">
+                            <select name="variant_loading" id="">
                                 <option value="">зад</option>
                                 <option value="">бок</option>
                                 <option value="">верхняя</option>
@@ -190,17 +204,17 @@
                             <h3>География загрузки</h3>
                             <div class="country_loading_block field_block">
                                 <h4>Выбереите страну погрузки</h4>
-                                <select name="" id="">
+                                <select name="country_loading" id="country_loading">
                                     <option value="">Россия</option>
                                 </select>
                             </div>
                             <div class="address_loading_block field_block">
                                 <h4>Адрес погрузки</h4>
-                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                                <input type="text" name="address_loading" id="address_loading" placeholder="Введите адрес погрузки">
                             </div>
                             <div class="address_tamoj_oforml field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_in" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -208,7 +222,7 @@
                             <h3>География выгрузки</h3>
                             <div class="country_unloading_block field_block">
                                 <h4>Выбереите страну разгрузки</h4>
-                                <select name="" id="">
+                                <select name="country_unloading" id="country_unloading">
                                     <option value="">Россия</option>
                                 </select>
                             </div>
@@ -218,7 +232,7 @@
                             </div>
                             <div class="address_tamoj_oforml field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_from" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -278,14 +292,11 @@
                     </div>
 
 
-
-
-
                     <div class="LTL_inquiry_block info_inquiry_block">
                         <h2>Груз типа LTL</h2>
                         <div class="variant_loading_block field_block">
                             <h4>Способ погрузки</h4>
-                            <select name="" id="">
+                            <select name="variant_loading" id="">
                                 <option value="">зад</option>
                                 <option value="">бок</option>
                                 <option value="">верхняя</option>
@@ -297,17 +308,17 @@
                             <h3>География загрузки</h3>
                             <div class="country_loading_block field_block">
                                 <h4>Выбереите страну погрузки</h4>
-                                <select name="" id="">
+                                <select name="country_loading" id="country_loading">
                                     <option value="">Россия</option>
                                 </select>
                             </div>
                             <div class="address_loading_block field_block">
                                 <h4>Адресс погрузки</h4>
-                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                                <input type="text" name="address_loading" id="address_loading" placeholder="Введите адрес погрузки">
                             </div>
                             <div class="address_tamoj_oforml field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_in" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -315,17 +326,17 @@
                             <h3>География выгрузки</h3>
                             <div class="country_unloading_block field_block">
                                 <h4>Выбереите страну разгрузки</h4>
-                                <select name="" id="">
+                                <select name="country_unloading" id="country_unloading">
                                     <option value="">Россия</option>
                                 </select>
                             </div>
                             <div class="address_unloading_block field_block">
                                 <h4>Адресс разгрузки</h4>
-                                <input type="text" placeholder="Введите адрес разгрузки">
+                                <input type="text" name="address_unloading" placeholder="Введите адрес разгрузки">
                             </div>
                             <div class="address_tamoj_oforml field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_from" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -396,10 +407,10 @@
 
                     
                     <div class="notOverall_inquiry_block info_inquiry_block">
-                        <h2>Груз типа 'негабарит'</h2>
+                        <h2>Груз типа 'Негабарит'</h2>
                         <div class="type_car_block field_block">
                             <h4>Тип транспорта</h4>
-                            <select name="" id="">
+                            <select name="type_car" id="">
                                 <option value="">тип транспорта</option>
                                 <option value="">тип транспорта</option>
                             </select>
@@ -407,7 +418,7 @@
 
                         <div class="variant_loading_block field_block">
                             <h4>Способ погрузки</h4>
-                            <select name="" id="">
+                            <select name="variant_loading" id="">
                                 <option value="">зад</option>
                                 <option value="">бок</option>
                                 <option value="">верхняя</option>
@@ -419,17 +430,17 @@
                             <h3>География загрузки</h3>
                             <div class="country_loading_block field_block">
                                 <h4>Выбереите страну погрузки</h4>
-                                <select name="" id="">
+                                <select name="country_loading" id="country_loading">
                                     <option value="">Россия</option>
                                 </select>
                             </div>
                             <div class="address_loading_block field_block">
                                 <h4>Адресс погрузки</h4>
-                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                                <input type="text" name="address_loading" id="address_loading" placeholder="Введите адрес погрузки">
                             </div>
                             <div class="address_tamoj_oforml field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_in" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -437,17 +448,17 @@
                             <h3>География выгрузки</h3>
                             <div class="country_unloading_block field_block">
                                 <h4>Выбереите страну разгрузки</h4>
-                                <select name="" id="">
+                                <select name="country_unloading" id="country_unloading">
                                     <option value="">Россия</option>
                                 </select>
                             </div>
                             <div class="address_unloading_block field_block">
                                 <h4>Адресс разгрузки</h4>
-                                <input type="text" placeholder="Введите адрес разгрузки">
+                                <input type="text" name="address_unloading" placeholder="Введите адрес разгрузки">
                             </div>
                             <div class="address_tamoj_oforml field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_from" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -507,7 +518,6 @@
                     </div>
 
 
-
                     <div class="FCL_inquiry_block info_inquiry_block">
                         <h2>Груз типа FCL(море/жд/авиа)</h2>
                         <div class="type_car_block field_block">
@@ -541,7 +551,7 @@
                             </div>
                             <div class="address_tamoj_oforml field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" name="address_tamoj" id="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_in" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -555,11 +565,11 @@
                             </div>
                             <div class="address_unloading_block field_block">
                                 <h4>Адресс разгрузки</h4>
-                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес погрузки">
+                                <input type="text" name="address_unloading" id="address_unloading" placeholder="Введите адрес разгрузки">
                             </div>
-                            <div class="address_tamoj_oforml field_block">
+                            <div class="address_tamoj_oforml_from field_block">
                                 <h4>Адрес таможенного оформления</h4>
-                                <input type="text" name="address_tamoj_oforml" class="Введите адрес таможенного офрмления">
+                                <input type="text" name="address_tamoj_from" class="Введите адрес таможенного офрмления">
                             </div>
                         </div>
 
@@ -621,6 +631,7 @@
             </div>
 
             <div class="inquiry_list_conteiner">
+                    
             </div>
         </div>
 

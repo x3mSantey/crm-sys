@@ -16,6 +16,40 @@ h4{
     height: 25px;
     margin-bottom: 5px;
 }
+.header_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+
+    z-index: 999;
+    background-color: #fff;
+}
+.menu_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+    left: 5%;
+
+    width: 90%;
+    height: 75px;
+}
+
+.nav_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 25px;
+}
 
 /*------------------------------
 
@@ -27,9 +61,12 @@ h4{
     flex-direction: row;
     
     width: 100%;
-    height: 100%;
+    box-sizing: content-box;
 }
 .lid_info_conteiner{
+    position: relative;
+    top: 75px;
+
     margin: 20px 0 20px 50px;
     padding: 20px;
     
@@ -37,6 +74,12 @@ h4{
     height: 100%;
 
     border: 1px solid #000;
+}
+.company_inp{
+    display: none;
+}
+.contacts_inp{
+    display: none;
 }
 .contacts_item_block{
     width: 100%;
@@ -53,6 +96,9 @@ h4{
 
     border: 1px solid #000;
     border-top: none;
+}
+.type_lid_block{
+    margin-top: 20px;
 }
 .tags_conteiner{
     margin-top: 10px;
@@ -77,6 +123,12 @@ h4{
     color: #fff;
     background-color: #000;
 }
+#descr_field{
+    width: 100%;
+    height: 70px;
+
+    margin-top: 30px;
+}
 
 /*------------------------------
 
@@ -90,12 +142,13 @@ h4{
     margin-left: 5px;
 }
 .save_changes{
+    display: none;
     position: relative;
-    left: 205px;
+    left: 315px;
 }
 .switch_datas{
     position: relative;
-    left: 205px;
+    left: 315px;
 }
 .edit_iquiry{
     width: 150px;
@@ -109,6 +162,15 @@ h4{
 
     width: 100%;
 }
+.collapse_desc{
+    display: none;
+    position: absolute;
+    left: 500px;
+}
+.show_desc{
+    position: absolute;
+    left: 500px;
+} 
 
 /*------------------------------
 
@@ -116,6 +178,9 @@ h4{
 
 -------------------------------*/
 .right_block_conteiner{
+    position: relative;
+    top: 75px;
+
     box-sizing: content-box;
     padding: 20px;
 }
@@ -124,21 +189,10 @@ h4{
 
     margin-bottom: 25px;
     padding: 20px;
-
-    border: 1px solid #000;
-}
-.nav_block{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-    width: 100%;
-    height: 25px;
 }
 
 .inquiry_list_conteiner{
-    width: 610px;
-
+    width: 680px;
     box-sizing: content-box;
 }
 .inquiry_item_block{
@@ -146,7 +200,7 @@ h4{
     flex-direction: column;
     
     box-sizing: content-box;
-    width: 610px;
+    width: 658px;
     
     margin-top: 5px;
     padding: 10px;

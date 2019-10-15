@@ -1,0 +1,67 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    left: 10%;
+
+    width: 80%;
+    height: 50px;
+}
+.create_lid{
+    height: 30px;
+}
+.filter_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#filter_lids{
+    height: 25px;
+    margin-left: 15px;
+}
+
+
+.tasks_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100%;
+
+    margin-top: 20px;
+    box-sizing: content-box;
+}
+.tasks_header{
+    width: 23%;
+    box-sizing: content-box;
+}
+
+.header_column{
+    width: 100%;
+    height: 30px;
+
+    border: 1px solid #000;
+}
+.header_column p{
+    text-align: center;
+    margin: 5px;
+}
+
+.list_tasks_conteiner{
+    width: 100%;
+    height: 50px;
+
+    margin-top: 20px;
+    border: 1px solid #000;
+}
+.name_lid{
+    margin: 15px 0 0 20px;
+}
