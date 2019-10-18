@@ -3,10 +3,12 @@ $(function () {
     $('.create_inquiry').on('click', () => {
         $('.form_inquiry_conteiner').css({ 'display': 'block' })
         $('.info_lid_conteiner').css({ 'border': '1px solid #000' })
+        $('.info_lid_conteiner').css({ 'display': 'block' })
     })
 
 
     $('.select_type').on('click', () => {
+
         let y = $('#type_inquiry option:selected').text()
 
         switch (y) {
@@ -46,51 +48,81 @@ $(function () {
 
             let typeInquiry = $('#sourse_inquiry option:selected').text()
 
-
-
             $('.inquiry_list_conteiner').append(`
-                <div class="inquiry_item_block" >
-                    <h2>Номер задачи: ${$('#nomber_inquiry').text()}</h2>
-                    <h4>Источник запроса: ${$('#sourse_inquiry option:selected').text()}</h4>
-                    <h4>Тип запроса: ${$('#type_inquiry option:selected').text()}</h4>
-                    <p class="information_inquiry" >
-                        Тип транспорта: ${data.type_car}<br>
-                        Способ погрузки: ${data.variant_loading}<br>
-                        Устловия поставки: ${data.delivery_condition}<br>
-                        Страна погрузки: ${data.country_loading}<br>
-                        Адрес погрузки: ${data.address_loading}<br>
-                        Адрес таможенного оформления: ${data.address_tamoj_in}<br>
-                        Страна разгрузки: ${data.country_unloading}<br>
-                        Адрес разгрузки: ${data.address_unloading}<br>
-                        Адрес таможенного офрмления: ${data.address_tamoj_from}<br>
-                        Характеристика груза: ${data.type_cargo}<br>
-                        Стоимость груза: ${data.price_cargo}<br>
-                        Вес груза: ${data.weight_cargo}<br>
-                        Страна в инфосах: ${data.country_invoise}<br>
-                        Кол-во кодо ТНВЭД: ${data.code_tnvad}<br>
-                        Упаковка: ${data.packing_cargo}<br>
-                        Класс опасности: ${data.class_dunger}<br>
-                        Регулярность грузоперевозок: ${data.traffic}<br>
-                        Температурный режим: ${data.tempr}<br>
-                        Габариты груза: ${data.size_cargo}<br>
+                <div class="inquiry_item_block" value="0">
+                    <div class="inquiry_main_info">
+                        <div>
+                            <h2>Номер запроса: ${$('#nomber_inquiry').text()}</h2>
+                        </div>
+                        <select id="status_inquiry">
+                            <option>Не закончен</option>
+                            <option>Не обработан</option>
+                            <option>Принят</option>
+                            <option>В обработке</option>
+                            <option>Обработан</option>
+                            <option>Возврат/уточнение</option>
+                            <option>Завершен</option>
+                            <option>Требует обратной связи</option>
+                            <option>Обратная связь</option>
+                        </select>
+                    </div>
+                    <div class="inquiry_sec_info">
+                        <div>
+                            <h4>Источник запроса: ${$('#sourse_inquiry option:selected').text()}</h4>
+                            <h4>Тип запроса: ${$('#type_inquiry option:selected').text()}</h4>
+                        </div>
+                        <button id="show_info_inq">Развернуть</button>
+                    </div>
+                    <p class="information_inquiry">
+                        <b>Тип транспорта:</b> ${data.type_car}<br>
+                        <b>Способ погрузки:</b> ${data.variant_loading}<br>
+                        <b>Устловия поставки:</b> ${data.delivery_condition}<br>
                     </p>
-                    <button class="show_desc btn" id="show_desc">Развернуть</button>
-                    <button class="collapse_desc btn" id="collapse_desc">Свернуть</button>
+                    <p class="information_inquiry">
+                        <b>Страна погрузки:</b> ${data.country_loading}<br>
+                        <b>Адрес погрузки:</b> ${data.address_loading}<br>
+                        <b>Адрес таможенного оформления:</b> ${data.address_tamoj_in}<br>
+                    </p>
+                    <p class="information_inquiry">
+                        <b>Страна разгрузки:</b> ${data.country_unloading}<br>
+                        <b>Адрес разгрузки:</b> ${data.address_unloading}<br>
+                        <b>Адрес таможенного офрмления:</b> ${data.address_tamoj_from}<br>
+                    </p>
+                    <div class="inquiry_third_info">
+                        <p class="information_inquiry">
+                            <b>Характеристика груза:</b> ${data.type_cargo}<br>
+                            <b>Стоимость груза:</b> ${data.price_cargo}<br>
+                            <b>Вес груза:</b> ${data.weight_cargo}<br>
+                            <b>Страна в инфосах:</b> ${data.country_invoise}<br>
+                            <b>Кол-во кодо ТНВЭД:</b> ${data.code_tnvad}<br>
+                            <b>Упаковка:</b> ${data.packing_cargo}<br>
+                            <b>Класс опасности:</b> ${data.class_dunger}<br>
+                            <b>Регулярность грузоперевозок:</b> ${data.traffic}<br>
+                            <b>Температурный режим:</b> ${data.tempr}<br>
+                            <b>Габариты груза:</b> ${data.size_cargo}<br>
+                        </p>
+                        <button id="hide_info_inq">Свернуть</button>
+                    </div>
                 </div>
             `)
             $('.form_inquiry_conteiner').css({ 'display': 'none' })
+            $('.info_lid_conteiner').css({ 'display': 'none' })
             $('.info_inquiry_block').css({ 'display': 'none' })
 
-            $('#show_desc').on('click', () => {
+            //Развернуть описание запроса
+            $('#show_info_inq').on('click', () => {
                 $('.information_inquiry').css({ 'display': 'block' })
-                $('.collapse_desc').css({ 'display': 'block' })
-                $('#show_desc').css({ 'display': 'none' })
+                $('#show_info_inq').css({ 'display': 'none' })
+                $('#hide_info_inq').css({ 'display': 'block' })
             })
-            $('#collapse_desc').on('click', () => {
-                $('.information_inquiry').removeAttr('style')
-                $('.collapse_desc').removeAttr('style')
-                $('#show_desc').css({ 'display': 'block' })
+            
+            //Свернуть описание запроса
+            $('#hide_info_inq').on('click', () => {
+                $('.information_inquiry').css({ 'display': 'none' })
+                $('#hide_info_inq').css({ 'display': 'none' })
+                $('#show_info_inq').css({ 'display': 'block' })
             })
+
         })
     })
 

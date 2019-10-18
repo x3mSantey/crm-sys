@@ -5,110 +5,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CRM: Задачи</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="menu_conteiner">
-        
-            <div class="filter_block">
-                <p>Сортировать</p>
-                <select name="filter_lids" id="filter_lids">
-                    <option value="">Задачи</option>
-                    <option value="">Актуальные</option>
-                    <option value="">Просроченные</option>
-                    <option value="">Отложенные</option>
-                    <option value="">Завершенные</option>
-                </select>
+    <div class="page_conteiner">
+        <div class="menu_conteiner">
+            <div class="menu_nav_block">
+                <a href="">
+                    <div class="btn_nav" id="">Рабочий стол</div>
+                </a>
+                <a href="">
+                    <div class="btn_nav" id="">Лиды</div>
+                </a>
+                <a href="">
+                    <div class="btn_nav" id="">Задачи</div>
+                </a>
+                <a href="">
+                    <div class="btn_nav" id="">Почта</div>
+                </a>
+                <a href="">
+                    <div class="btn_nav" id="">Аналитика</div>
+                </a>
+                <a href="">
+                    <div class="btn_nav" id="">Настройки</div>
+                </a>
             </div>
-            <button class="create_lid">Создать новый лид</button>
-        
-    </div>
-    <div class="tasks_conteiner">
-        <div class="new_lids_conteiner tasks_header">
-            <div class="header_column">
-                <p>Не разобранные</p>
-            </div>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
-                    </div>
-                </div>
-            </a>
         </div>
-        <div class="today_tasks_conteiner tasks_header">
-            <div class="header_column">
-                <p>Задачи на сегодня</p>
+        <div class="tasks_conteiner">
+            <div class="filters_block">
+                <input type="checkbox" name="" id="choose_all">
+                <div class="date_block filter_opt">
+                    <p>Время выполнения</p>
+                </div>
+                <div class="responsible_block filter_opt">
+                    <P>Номер запроса</P>
+                </div>
+                <div class="type_inq_block filter_opt">
+                    <p>Тип запроса</p>
+                </div>
+                <div class="text_inq_block filter_opt">
+                    <p>Тип задачи</p>
+                </div>
+                <div class="result_inq_block filter_opt">
+                    <p>Текст задачи</p>
+                </div>
             </div>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
+            <div class="list_tasks_block">
+                <div class="task_block">
+                    <input type="checkbox" name="" id="choose_all">
+                    <div class="date_block info_opt">
+                        <p class="green">22.10.2019 Весь день</p>
+                    </div>
+                    <div class="responsible_block info_opt">
+                        <P>1232321312</P>
+                    </div>
+                    <div class="type_inq_block info_opt">
+                        <p>FCL</p>
+                    </div>
+                    <div class="text_inq_block info_opt">
+                        <p>Связаться с клиентом</p>
+                    </div>
+                    <div class="result_inq_block info_opt">
+                        <p></p>
                     </div>
                 </div>
-            </a>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
+                <div class="task_block">
+                    <input type="checkbox" name="" id="choose_all">
+                    <div class="date_block info_opt">
+                        <p class="red">22.10.2019 Весь день</p>
+                    </div>
+                    <div class="responsible_block info_opt">
+                        <P>1232321312</P>
+                    </div>
+                    <div class="type_inq_block info_opt">
+                        <p>LTL</p>
+                    </div>
+                    <div class="text_inq_block info_opt">
+                        <p>Связаться с клиентом</p>
+                    </div>
+                    <div class="result_inq_block info_opt">
+                        <p></p>
                     </div>
                 </div>
-            </a>
-        </div>
-        <div class="tomor_tasks_conteiner tasks_header">
-            <div class="header_column">
-                <p>Задачи на завтра</p>
+                <div class="task_block">
+                    <input type="checkbox" name="" id="choose_all">
+                    <div class="date_block info_opt">
+                        <p class="green">22.10.2019 Весь день</p>
+                    </div>
+                    <div class="responsible_block info_opt">
+                        <P>1232321312</P>
+                    </div>
+                    <div class="type_inq_block info_opt">
+                        <p>FTL</p>
+                    </div>
+                    <div class="text_inq_block info_opt">
+                        <p>Свзяаться с клиентом</p>
+                    </div>
+                    <div class="result_inq_block info_opt">
+                        <p>Текст задачи</p>
+                    </div>
+                </div>
+                <div class="task_block">
+                    <input type="checkbox" name="" id="choose_all">
+                    <div class="date_block info_opt">
+                        <p class="orange">22.10.2019 Весь день</p>
+                    </div>
+                    <div class="responsible_block info_opt">
+                        <P>1232321312</P>
+                    </div>
+                    <div class="type_inq_block info_opt">
+                        <p>Негабарит</p>
+                    </div>
+                    <div class="text_inq_block info_opt">
+                        <p>Связаться с клиентом</p>
+                    </div>
+                    <div class="result_inq_block info_opt">
+                        <p>Текст задачи</p>
+                    </div>
+                </div>
             </div>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-        <div class="week_tasks_conteiner tasks_header">
-            <div class="header_column">
-                <p>Задачи на неделю</p>
-            </div>
-            <a href="file:///D:/PROJECTS/CRM%20system/page_lid/page_lid.html">
-                <div class="list_tasks_conteiner tasks_column">
-                    <div class="lid_block">
-                        <h3 class="name_lid">Название лида</h3>
-                    </div>
-                </div>
-            </a>
         </div>
     </div>
 </body>

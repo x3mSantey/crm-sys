@@ -3,65 +3,125 @@ html, body{
     padding: 0;
 }
 
-.menu_conteiner{
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.page_conteiner{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+    height: 100vh;
+
+    background-color: #ECECEC;
+}
+.menu_conteiner{
+    height: 100%;
+    background-color: #014991;
+}
+.menu_nav_block{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    vertical-align: center;
 
     position: relative;
-    left: 10%;
+    top: 50%;
 
-    width: 80%;
+    margin-top: -240px;
+
+    width: 60px;
+    height: 492px;
+    
+    
+}
+.btn_nav{
+    width: 60px;
     height: 50px;
+    
+    padding-top: 30px;
+
+    text-align: center;
+    font-size: 12px;
+
+    border-bottom: 1px solid #000;
 }
-.create_lid{
-    height: 30px;
-}
-.filter_block{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#filter_lids{
-    height: 25px;
-    margin-left: 15px;
+.menu_nav_block:first-child{
+    border-top: 1px solid #000;
 }
 
 
 .tasks_conteiner{
     display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+.filters_block{
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
 
-    width: 100%;
+    position: relative;
+    left: 5%;
 
-    margin-top: 20px;
-    box-sizing: content-box;
-}
-.tasks_header{
-    width: 23%;
-    box-sizing: content-box;
-}
+    width: 90%;
+    height: 60px;
 
-.header_column{
-    width: 100%;
-    height: 30px;
-
-    border: 1px solid #000;
-}
-.header_column p{
+    margin-top: 70px;
     text-align: center;
-    margin: 5px;
+
+    border-bottom: 1px solid #000;
+}
+.filter_opt{
+    border-left: 1px solid #000;
+}
+#choose_all{
+    margin: 13px 13px 0 5px;
+
+    width: 25px;
+    height: 25px;
+}
+.filter_opt{
+    width: 20%;
 }
 
-.list_tasks_conteiner{
-    width: 100%;
-    height: 50px;
+
+.list_tasks_block{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    left: 5%;
+
+    width: 90%;
+    height: 100%;
 
     margin-top: 20px;
-    border: 1px solid #000;
+
+    text-align: center;
 }
-.name_lid{
-    margin: 15px 0 0 20px;
+.task_block{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid black;
+
+    margin-top: 5px;
+}
+p{
+    font-weight: bold;
+}
+.info_opt{
+    width: 20%;
+}
+.orange{
+    color: #E19E00;
+}
+.green{
+    color: #669900;
+}
+.red{
+    color: #C31622;
 }
